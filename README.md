@@ -11,9 +11,7 @@ sudo cp -r waybar ~/.config/waybar/
 
 ### Lock on suspend 
 
-Configure **systemd-logind**
-
-Edit `/etc/systemd/logind.conf`
+Configure **systemd-logind** and Edit `/etc/systemd/logind.conf`
 
 Set the following
 
