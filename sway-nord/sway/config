@@ -22,6 +22,8 @@ set $menu wmenu-run -f 'JetBrains Mono Nerd Font 12' -N 1f222d  -n 81a1c1 -S 81a
 
 font pango:JetBrains Mono Nerd Font 12
 
+# Set cursor theme
+#seat * xcursor_theme your_cursor 24
 
 ### Output configuration
 #
