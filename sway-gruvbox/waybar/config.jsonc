@@ -65,7 +65,7 @@
     "interval": 5,
     "tooltip": false
   },
-   "pulseaudio": {
+  "pulseaudio": {
    "scroll-step": 5,
    "format": "{icon} {volume}%",
    "format-muted": "",
