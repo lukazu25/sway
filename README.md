@@ -11,33 +11,14 @@ sudo cp -r waybar ~/.config/waybar/
 
 ### Lock on suspend 
 
-Create the following service which locks the screen
+Configure **systemd-logind**
 
-`/etc/systemd/system/swaylock@.service`
+Edit `/etc/systemd/logind.conf`
 
-Check wayland environment variables
-
-```
-echo $WAYLAND_DISPLAY
-echo $XDG_RUNTIME_DIR
-```
+Set the following
 
 ```
-[Unit]
-Description=Lock screen for %i before suspend
-Before=sleep.target
-
-[Service]
-User=%i
-Environment=XDG_RUNTIME_DIR=/run/user/1000
-Environment=WAYLAND_DISPLAY=wayland-1
-ExecStart=/usr/bin/swaylock
-
-[Install]
-WantedBy=sleep.target
-
+HandleLidSwitch=suspend
+HandleLidSwitchDocked=suspend
 ```
-Enable the `swaylock@user.service` systemd unit for it to take effect for the username user
 
-```
-sudo systemctl enable swaylock@username.service
