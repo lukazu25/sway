@@ -65,14 +65,16 @@
     "interval": 5,
     "tooltip": false
   },
-  "pulseaudio": {
-  "scroll-step": 5,
-		"format": "{icon} {volume}%",
-		"format-icons": {
-			"default": ["", "", ""]
-		},
-		"on-click": "pavucontrol",
-		"tooltip": false
+   "pulseaudio": {
+   "scroll-step": 5,
+   "format": "{icon} {volume}%",
+   "format-muted": "",
+   "format-icons": {
+    "default": ["", "", ""],
+    "muted": ""
+  },
+    "on-click": "pavucontrol",
+    "tooltip": false
   },
   "clock": {
     "format": "󱑁 {:%H:%M}",
