@@ -17,7 +17,7 @@ set $right l
 # Your preferred terminal emulator
 set $term foot
 # Your preferred application launcher
-set $menu wmenu-run -f 'JetBrains Mono Nerd Font 12' -N 8B4513  -n FFFFFF -S FFA500 -s FFFFFF 
+set $menu wmenu-run -f 'JetBrains Mono Nerd Font 12' -N 1d2021  -n ebdbb2 -S fe8019 -s 3c3836 
 
 
 font pango:JetBrains Mono Nerd Font 12
