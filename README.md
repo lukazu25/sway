@@ -11,9 +11,9 @@ sudo cp -r waybar ~/.config/waybar/
 
 ### Lock on suspend 
 
-To configure **systemd-logind** Edit `/etc/systemd/logind.conf`
+To configure **systemd-logind**, edit the file `/etc/systemd/logind.conf`
 
-Set the following
+Set the following options:
 
 ```
 HandleLidSwitch=suspend
