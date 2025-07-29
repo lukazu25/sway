@@ -24,17 +24,18 @@ echo $XDG_RUNTIME_DIR
 
 ```
 [Unit]
-Description=Lock screen before suspend
+Description=Lock screen for %i before suspend
 Before=sleep.target
 
 [Service]
+User=%i
 Environment=XDG_RUNTIME_DIR=/run/user/1000
 Environment=WAYLAND_DISPLAY=wayland-1
 ExecStart=/usr/bin/swaylock
-User=yourusername
 
 [Install]
 WantedBy=sleep.target
+
 ```
 Enable the `swaylock@user.service` systemd unit for it to take effect for the username user
 
